@@ -1,22 +1,23 @@
 import java.awt.*;
-import javax.imageio.*;
+import javax.imageio.*; 
 class TestImage {
 
    public static void main(String args[])
       throws Exception {
-      // Create a frame to display the image.
+      
       Frame frame = new Frame("Test Image");
       frame.setSize(1024,768);
       frame.setVisible(true);
       Graphics gc = frame.getGraphics();
+       
       
       try {
-         // Read the image from the file.
+         
           
          Image img = new Image("Horse.jpg");
-         // Display the original image.
-         img.draw(gc,10,40);
          
+         img.draw(gc,10,40);
+         /*
          // Flip the image across y axis
          img.flipY();
          //write and draw flipped image
@@ -44,7 +45,7 @@ class TestImage {
          img.flipX();
          //write and draw flipped image
          img.draw(gc,20+img.getWidth(),40);
-         img.write("HorseFlippedX.jpg");;
+         img.write("HorseFlippedX.jpg");*/
         
       } 
       
